@@ -45,6 +45,7 @@ def simAndCheck(strList, searchVal):
     # Check for modifications to array
     for i in range(0, arraySize):
         val = arrayList[i]
+        #print(arrayList[i])
         if val < 0:
           expType = 'sw'
         else:
@@ -91,3 +92,4 @@ for (strList, searchVal, testName) in tests:
         simAndCheck(strList, searchVal)
     except:
         print("skipped")
+
